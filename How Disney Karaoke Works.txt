@@ -1,0 +1,54 @@
+﻿* Two pickers [if Benedict Cumberbatch and Passwords had a child…)
+   * Column 1: Disney Shows (Movie/TV/etc.)
+   * Column 2: Disney Songs (from ^)
+
+   * Need to solve column 2 to solve column 1.
+
+   * To solve column 2: have to find the right song
+   
+   * V1: Based on bomb stats:
+   
+   * Serial Number
+   
+   * find 6 numbers (%10)
+   
+   * add all 6 together to get a number between 01 - 63
+   
+   * Use two digit number from SN to match on Table A.
+   
+   * Batteries & Port Types
+   
+   * If ≥2 batteries & ≥2 port types (each of different amounts), then pick the first title that is not the second title beginning with an even-numbered letter (e.g. b, d, f, h, j…) [see Table B]
+   
+   * If <2 batteries & <2 port types (each of different amounts), then pick the first title that is not the second title beginning with an odd-numbered letter (e.g. a, c, e, g, i…) [see Table B]
+   
+   * If ≥2 batteries & ≥2 port types (each of equal amounts), then pick second title in box to the left (loop around to last on right if no box to the left)
+   
+   * If <2 batteries & <2 port types (each of equal amounts), then pick second title in box to the right (loop around to first on left if no box to the right)
+   
+   * If ≥2 batteries & <2 port types, then pick second title in box above (loop around to bottom if no box above)
+   
+   * If <2 batteries & ≥2 port types, then pick second title in box below (loop around to top if no box below)
+   
+   * V2: Based on audio cues:
+   
+   * Every title option will loop a clip of a song, but only one option will have a matching title-song pair (make sure clip has audible title name in lyric for uneducated plebeians? Do we even want to care about the uneducated plebeians? I mean… there are a lot of Disney songs… but it is also Disney...)
+   
+   * Definitely not a loophole: Yes, there is the possibility of having multiple show-song matches in one round, BUT there can only be one correct song; therefore, there can only be one correct answer.
+   
+   * To solve column 1: match song to movie 
+   
+   * Uneducated plebeians see Table C.
+
+   * Tables:
+   * Table A
+   * 0 - 6 across; 1 - 9 down      * Each box consists of three song titles
+   * Note: 0-1, 0-2, 0-3, 0-4, 0-5 don’t exist, because minimum 06 from SN.
+   * Table B
+   
+   * Even-numbered letters
+   * Odd-numbered letters
+
+   * Table C
+   * Left column: Disney Shows (Movie/TV/etc.)
+   * Right column: Disney Songs (from ^)
