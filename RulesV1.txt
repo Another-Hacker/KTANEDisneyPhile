@@ -1,0 +1,33 @@
+RULES
+
+1. Get digital root of SN converting letters to nums(%10)
+2. Match num to Table A
+3. Bats and Ports (moving through Table A)
+    a. If bat >= 2 AND port types >= 2
+        ANS: is NOT op2
+             is (op1 OR op3) AND first letter is even
+    b. If bat < 2 AND port types < 2 
+        ANS: is NOT op2
+             is (op1 OR op3) AND first letter is odd
+    c. If (bat >= 2 AND port types >= 2) AND (bat == totalPorts)
+        ANS: is op2 in next index
+             is op2 in index 0 if IndexOutOfRange
+    d. If (bat < 2 AND port types < 2) AND (bat == totalPorts)
+        ANS: is op2 in prior index
+             is op2 in index last if IndexOutOfRange
+    e. If bat >= 2 AND port types < 2 
+        ANS: is op2 index above
+             is op2 index last(row) if IndexOutOfRange
+    f. If  bat < 2 AND port types >= 2
+        ANS: is op2 in index below
+             is op2 in index first(row) if IndexOutOfRange
+    g. OTHERWISE
+        ANS: is op2 in index
+
+To solve match TableA_ANS to related movie in Table B
+
+Table A = 3 song titles per cell
+Tabel B = Movie/Song matches
+Tabel C = odd letters vs. even letters
+
+Table A Format = {{{a,b,c},{a,b,c},{a,b,c},...},{{d,e,f},{d,e,f},{d,e,f},...},...}
